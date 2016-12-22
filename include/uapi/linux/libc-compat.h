@@ -50,10 +50,12 @@
 #define _LIBC_COMPAT_H
 
 /* We have included glibc headers... */
-#if defined(__GLIBC__)
+#if 1
+#define __USE_MISC
 
 /* Coordinate with glibc net/if.h header. */
 #if defined(_NET_IF_H) && defined(__USE_MISC)
+#define __UAPI_DEF_IF_NET_DEVICE_FLAGS_LOWER_UP_DORMANT_ECHO 0
 
 /* GLIBC headers included first so don't define anything
  * that would already be defined. */
