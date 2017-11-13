@@ -13,7 +13,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <netinet/in.h>
-#include <netinet/ether.h>
 #include <linux/if_link.h>
 #include <linux/if_bridge.h>
 #include <net/if.h>
