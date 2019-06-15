@@ -1038,6 +1038,7 @@ static int iplink_modify(int cmd, unsigned int flags, int argc, char **argv)
 		return ret;
 
 	if (type) {
+	    fprintf(stderr, "Here with type: %s", type);
 		struct link_util *lu;
 		struct rtattr *linkinfo;
 		char *ulinep = strchr(type, '_');
